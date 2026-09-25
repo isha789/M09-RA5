@@ -189,3 +189,27 @@ public class RotX {
         forcaBrutaRotX("Úiüht, úiü wx ùxí ìv?");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
