@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Monoalfabetic {
 
-    // Only ONE uppercase char array at class level
     static char[] alfabet = {
         'A', 'Á', 'À', 'B', 'C', 'Ç', 'D', 'E', 'É', 'È',
         'F', 'G', 'H', 'I', 'Í', 'Ì', 'Ï', 'J', 'K', 'L',
