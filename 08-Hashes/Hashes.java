@@ -131,7 +131,7 @@ private boolean comprovar(String password, String alg,
     return hashIntent.equals(hash);
 }
 
-
+  //getInterval method for getting days, hours, minutes, seconds and milliseconds
     public String getInterval(long t1, long t2){
         long diferencia = t2 - t1;
 
