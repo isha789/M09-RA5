@@ -8,24 +8,26 @@ import javax.crypto.spec.PBEKeySpec;
 public class Hashes {
     
     int npass = 0;
-    public String getSHA512AmbSalt(String pw, String salt){
-        try {
-            String text = pw + salt;
-    
-            MessageDigest md = MessageDigest.getInstance("SHA-512");
-    
-            byte[] bytes = md.digest(text.getBytes(StandardCharsets.UTF_8));
-    
-            HexFormat hex = HexFormat.of();
-    
-            String hash = hex.formatHex(bytes);
-    
-            return hash;
-    
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+  
+public String getSHA512AmbSalt(String pw, String salt) {
+    try {
+        String text = salt + pw;
+
+        MessageDigest md = MessageDigest.getInstance("SHA-512");
+
+        byte[] bytes = md.digest(text.getBytes(StandardCharsets.UTF_8));
+
+        HexFormat hex = HexFormat.of();
+
+        String hash = hex.formatHex(bytes);
+
+        return hash;
+
+    } catch (Exception e) {
+        throw new RuntimeException(e);
     }
+}
+
 
 
     public String getPBKDF2AmbSalt(String pw, String salt){
